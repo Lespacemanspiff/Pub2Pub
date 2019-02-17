@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import logo from './logo.svg';
-import './App.css';
-import Kingdom from './pages/Kingdom'
+import Home from './pages/Home'
+import PubList from './pages/PubList'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter>
+      <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Kingdom}/>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/PubList" component={PubList}/>
           </Switch>
-        </BrowserRouter>
+      </BrowserRouter>
       </div>
     )
   }
