@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const Kingdom = () => {
+const Home = () => {
   return(
     <div>
-      <Navbar/>
-      <h1>Kingdom Animality</h1>
+    <Navbar/>
+      <h1>This is the home page Now</h1>
     </div>
   )
 }
 
-export default Kingdom
+export default Home

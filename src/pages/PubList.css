@@ -1,0 +1,12 @@
+.results{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 10px;
+  place-items: center;
+}
+.result{
+  display: grid;
+  place-items: center;
+  color: #5B58C1
+  
+}
