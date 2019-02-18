@@ -6,14 +6,14 @@ import PubList from './pages/PubList'
 class App extends Component {
   render() {
     return (
-      <div>
+     <div>
       <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/PubList" component={PubList}/>
-          </Switch>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/PubList" component={PubList}/>
+        </Switch>
       </BrowserRouter>
-      </div>
+     </div>
     )
   }
 }
