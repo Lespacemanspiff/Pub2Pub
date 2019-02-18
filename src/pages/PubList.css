@@ -2,11 +2,34 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 10px;
-  place-items: center;
+  color: white;
+  border: 5px solid blue;
 }
 .result{
   display: grid;
   place-items: center;
-  color: #5B58C1
-  
+  border: 30px solid red;
+
+}
+.pubList{
+  background-image: url('https://images.pexels.com/photos/63633/bar-local-cong-ireland-63633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+}
+.title{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 39px;
+  letter-spacing: 1.8px;
+  word-spacing: 1.8px;
+  color: white;
+  font-weight: 700;
+  text-decoration: overline solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: none;
+  text-align: center;
+  border: 5px solid green;
 }
