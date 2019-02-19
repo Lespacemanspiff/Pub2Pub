@@ -1,0 +1,49 @@
+.pub {
+  color: white;
+  background-image: url('https://images.pexels.com/photos/1038935/pexels-photo-1038935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+
+.d{
+  color: black;
+  background-color: #222;
+  padding: 0 0.3em;
+  /* background: transparent; */
+}
+
+.a{
+  font-size: 60px;
+}
+
+.b {
+  font-size: 40px;
+}
+
+.c {
+  font-size: 35px;
+}

@@ -24,23 +24,27 @@ class PubList extends Component {
     return(
       <div className="pubList">
         <Navbar/>
-        <div className="title">
-          <h1> This is the Pub List</h1>
-        </div>
-        <input
+        <div class="plate">
+<p class="script"><span>What</span></p>
+<p class="shadow text1">STATE</p>
+<p class="shadow text2">ARE</p>
+<p class="shadow text3">YOU IN?</p>
+<p class="script"><span>Search below</span></p>
+</div>
+        <input className="searchBox" size="50"
           placeHolder='Search your State'
           type='search'
           value={this.state.query}
           onChange={this.handleSearch}
         />
-        <button onClick={this.handleClick}>
-          Search!
+        <button class="button" onClick={this.handleClick}>
+        Show me Pubs!
         </button>
         <div className='results'>
         {
           this.state.pubs.map(result => {
             return(
-              <div key={result.name}>
+              <div className="result" key={result.name}>
                 <Link to={`/pub/${result.id}`} target="_blank">{result.name}</Link>
                 <a href={result.website_url} target="_blank"></a>
               </div>

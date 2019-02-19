@@ -4,8 +4,10 @@ import './Navbar.css'
 
 const Navbar = () => {
   return(
-    <div>
-      <Link className="nav" to="/">Home</Link> | <Link className="nav" to="/PubList">Pub List</Link>
+    <div className="topnav">
+      <div className='topnav a'>
+        <Link to="/">Home</Link>  <Link to="/PubList">Pub List</Link>
+      </div>
     </div>
   )
 }
