@@ -19,36 +19,40 @@ class PubList extends Component {
     this.setState({ pubs: data })
   }
 
+
   render(){
     console.log(this.state.pubs)
     return(
       <div className="pubList">
         <Navbar/>
-        <div className="title">
-          <h1> This is the Pub List</h1>
-        </div>
-        <input
-          placeHolder='Search your State'
-          type='search'
-          value={this.state.query}
-          onChange={this.handleSearch}
-        />
-        <button onClick={this.handleClick}>
-          Search!
-        </button>
-        <div className='results'>
+        <div className="plate">
+              <p className="script"><span>What</span></p>
+              <p className="shadow text1">STATE</p>
+              <p className="shadow text2">ARE</p>
+              <p className="shadow text3">YOU IN?</p>
+              <p className="script"><span>Search below</span></p>
+              </div>
+              <input className="searchBox"
+              placeHolder='Search your State'
+              type='search'
+              value={this.state.query}
+              onChange={this.handleSearch}/>
+            <button className="button" onClick={this.handleClick}>
+                              Show me Pubs!
+                    </button>
+
+         <div className='results'>
         {
           this.state.pubs.map(result => {
             return(
-              <div key={result.name}>
-                <Link to={`/pub/${result.id}`} target="_blank">{result.name}</Link>
-                <a href={result.website_url} target="_blank"></a>
-              </div>
+                      <div className="result" key={result.name}>
+                        <Link to={`/pub/${result.id}`}>{result.name}</Link>
+                      </div>
             )
           })
         }
         </div>
-      </div>
+</div>
     )
   }
 }

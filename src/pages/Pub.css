@@ -1,0 +1,15 @@
+.pub {
+  background: url('./pubjs.jpeg') center no-repeat;
+  /* background: url(../Images/logo.png) left center no-repeat; */
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+}
+
+body {
+  height: 100%;
+}

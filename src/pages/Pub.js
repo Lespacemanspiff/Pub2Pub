@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import './Pub.css';
 
 class Pub extends Component {
   state = { pub: {} }
