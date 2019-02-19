@@ -1,35 +1,126 @@
-.results{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-gap: 10px;
-  color: white;
-  border: 5px solid blue;
-}
-.result{
-  display: grid;
-  place-items: center;
-  border: 30px solid red;
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+.plate {
+  width: 410px;
+  margin: 10% auto;
+  margin-bottom: 3em;
 
 }
-.pubList{
-  background-image: url('https://images.pexels.com/photos/63633/bar-local-cong-ireland-63633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
   text-align: center;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid white;
+
 }
-.title{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 39px;
-  letter-spacing: 1.8px;
-  word-spacing: 1.8px;
-  color: white;
-  font-weight: 700;
-  text-decoration: overline solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: none;
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
   text-align: center;
-  border: 5px solid green;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background: transparent;
+  padding: 0 0.3em;
+
+}
+/* .script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+} */
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}
+.button {
+  background-color: grey;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  opacity: .75;
+}
+.results{
+  /* border: 5px solid blue; */
+  width: 100vw;
+  min-height: 10vh;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+.result{
+  background-color: black (255, 255, 255, 0.8);
+  padding: 4px;
+  font-size: 25px;
+  opacity: .85;
+  text-align: center;
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  min-height: 2.5vh;
+}
+
+.button {
+  margin-top: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.button:hover {
+  background-color: gold; /* Green */
+  color: black;
+}
+
+
+a {
+  color: white;
+}
+
+a:hover{
+  color: gold;
+}
+
+.pubList{
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.searchBox{
+  border: none;
+  padding: 1px;
+  font-size: 16px;
+  margin: 1px 1px;
 }

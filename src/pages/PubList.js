@@ -13,7 +13,8 @@ class PubList extends Component {
     this.setState({ query })
   }
 
-  handleClick = async event => {
+  handleSubmit = async event => {
+    event.preventDefault()
     const { query } = this.state
     const { data } = await axios.get(`https://api.openbrewerydb.org/breweries/?by_state=${query}`)
     this.setState({ pubs: data })
@@ -24,25 +25,37 @@ class PubList extends Component {
     return(
       <div className="pubList">
         <Navbar/>
-        <div className="title">
-          <h1> This is the Pub List</h1>
-        </div>
-        <input
-          placeHolder='Search your State'
-          type='search'
-          value={this.state.query}
-          onChange={this.handleSearch}
-        />
-        <button onClick={this.handleClick}>
-          Search!
-        </button>
+        <div className="plate">
+<p className="script"><span>What</span></p>
+<p className="shadow text1">STATE</p>
+<p className="shadow text2">ARE</p>
+<p className="shadow text3">YOU IN?</p>
+<p className="script"><span>Cheers!</span></p>
+</div>
+
+  <div className="fullInput">
+        <form onSubmit={this.handleSubmit}>
+          <input className="searchBox"
+            placeHolder='Search your State'
+            type='search'
+            value={this.state.query}
+            onChange={this.handleSearch}
+          />
+    <div>
+          <button type="submit" className="button">
+            Show me the pubs!
+          </button>
+    </div>
+        </form>
+
+  </div>
         <div className='results'>
         {
           this.state.pubs.map(result => {
             return(
-              <div key={result.name}>
-                <Link to={`/pub/${result.id}`} target="_blank">{result.name}</Link>
-                <a href={result.website_url} target="_blank"></a>
+              <div className="result" key={result.name}>
+                <Link to={`/pub/${result.id}`}>{result.name}</Link>
+
               </div>
             )
           })

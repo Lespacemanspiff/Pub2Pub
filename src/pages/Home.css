@@ -1,37 +1,62 @@
-body {
-background-image: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+.plate {
+  width: 410px;
+  margin: 90% auto;
+  background-attachment: fixed;
+
+
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+
+}
+.script:before {
+  /* content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 1px solid #fff; */
 }
 
-body {
-    background-size: cover;
-    border: 5px solid red;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
+.text1 {
+  font-size: 60px;
 }
-.titlePage{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 39px;
-  letter-spacing: 1.8px;
-  word-spacing: 1.8px;
-  color: white;
-  font-weight: 700;
-  text-decoration: overline solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: none;
-  text-align: center;
-  border: 5px solid blue;
+.text2 {
+  font-size: 169px;
 }
-.homePage{
-  text-align: center;
-  color: white;
-  border-color: white;
-  border: 5px solid white;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 0;
+.text3 {
+  font-size: 100px;
 }
