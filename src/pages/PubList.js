@@ -20,6 +20,7 @@ class PubList extends Component {
     this.setState({ pubs: data })
   }
 
+
   render(){
     console.log(this.state.pubs)
     return(
@@ -61,7 +62,7 @@ class PubList extends Component {
           })
         }
         </div>
-      </div>
+</div>
     )
   }
 }
