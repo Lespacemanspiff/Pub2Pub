@@ -13,6 +13,7 @@ class Pub extends Component {
     const url = this.props.match.params.id
     const { data } = await axios.get(`https://api.openbrewerydb.org/breweries/${url}`)
     this.setState({ pub: data })
+    window.scrollTo(0, 0)
   }
 
   numberToPhone = number => {
@@ -26,22 +27,23 @@ class Pub extends Component {
     const { pub } = this.state;
     console.log(pub)
     return (
+      <>
+      <Navbar/>
       <div className="pub">
-        <Navbar/>
-        <div class="plate">
-          <p class="shadow a">{pub.name}</p>
-          <p class="shadow c">Phone:</p>
-          <p class="shadow b">{this.numberToPhone(pub.phone)}</p>
-          <p class="shadow c">Address:</p>
-          <p class="shadow b">{pub.street},</p>
-          <p class="shadow b">{pub.city}, {pub.state}</p>
-          <p class="shadow b">{pub.postal_code}</p> */}
-          {
-            pub.website_url &&
-            <p class="script d"><span><a href={pub.website_url}>Visit site!</a></span></p>
-          }
+
+        <div className="plate y">
+          <p className="script"><span>Welcome to</span></p>
+          <p className="shadow z">{pub.name}</p>
+          <p className="shadow c">Phone:</p>
+          <p className="shadow b">{this.numberToPhone(pub.phone)}</p>
+          <p className="shadow c">Address:</p>
+          <p className="shadow e">{pub.street},</p>
+          <p className="shadow e">{pub.city}, {pub.state}</p>
+          <p className="shadow f">{pub.postal_code}</p>
+          <p className="script d"><span><a href={pub.website_url} target="_blank">Visit site!</a></span></p>
         </div>
       </div>
+      </>
     )
   }
 }

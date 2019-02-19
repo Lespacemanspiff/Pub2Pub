@@ -25,31 +25,37 @@ class PubList extends Component {
     return(
       <div className="pubList">
         <Navbar/>
-        <div class="plate">
-<p class="script"><span>What</span></p>
-<p class="shadow text1">STATE</p>
-<p class="shadow text2">ARE</p>
-<p class="shadow text3">YOU IN?</p>
-<p class="script"><span>Search below</span></p>
+        <div className="plate">
+<p className="script"><span>What</span></p>
+<p className="shadow text1">STATE</p>
+<p className="shadow text2">ARE</p>
+<p className="shadow text3">YOU IN?</p>
+<p className="script"><span>Cheers!</span></p>
 </div>
+
+  <div className="fullInput">
         <form onSubmit={this.handleSubmit}>
-          <input className="searchBox" size="50"
+          <input className="searchBox"
             placeHolder='Search your State'
             type='search'
             value={this.state.query}
             onChange={this.handleSearch}
           />
+    <div>
           <button type="submit" className="button">
-            Show me Pubs!
+            Show me the pubs!
           </button>
+    </div>
         </form>
+
+  </div>
         <div className='results'>
         {
           this.state.pubs.map(result => {
             return(
               <div className="result" key={result.name}>
-                <Link to={`/pub/${result.id}`} target="_blank">{result.name}</Link>
-                <a href={result.website_url} target="_blank"></a>
+                <Link to={`/pub/${result.id}`}>{result.name}</Link>
+
               </div>
             )
           })

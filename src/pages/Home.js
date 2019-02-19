@@ -7,12 +7,12 @@ const Home = () => {
   return(
     <div className="homePage">
       <Navbar/>
-      <div class="plate">
-    <p class="script"><span>State 2 State </span></p>
-    <p class="shadow text1">PUB</p>
-    <p class="shadow text2">2</p>
-    <p class="shadow text3">PUB</p>
-    // <p class="script"><span>Group 6</span></p>
+      <div className="plate">
+    <p className="script"><span>State 2 State </span></p>
+    <p className="shadow text1">PUB</p>
+    <p className="shadow text2">2</p>
+    <p className="shadow text3">PUB</p>
+    <p className="script"><span>Cheers!</span></p>
   </div>
     </div>
   )
