@@ -36,7 +36,10 @@ class Pub extends Component {
           <p class="shadow b">{pub.street},</p>
           <p class="shadow b">{pub.city}, {pub.state}</p>
           <p class="shadow b">{pub.postal_code}</p> */}
-          <p class="script d"><span><a href={pub.website_url}>Visit site!</a></span></p>
+          {
+            pub.website_url &&
+            <p class="script d"><span><a href={pub.website_url}>Visit site!</a></span></p>
+          }
         </div>
       </div>
     )
