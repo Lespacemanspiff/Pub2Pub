@@ -13,7 +13,8 @@ class PubList extends Component {
     this.setState({ query })
   }
 
-  handleClick = async event => {
+  handleSubmit = async event => {
+    event.preventDefault()
     const { query } = this.state
     const { data } = await axios.get(`https://api.openbrewerydb.org/breweries/?by_state=${query}`)
     this.setState({ pubs: data })
@@ -31,15 +32,17 @@ class PubList extends Component {
 <p class="shadow text3">YOU IN?</p>
 <p class="script"><span>Search below</span></p>
 </div>
-        <input className="searchBox" size="50"
-          placeHolder='Search your State'
-          type='search'
-          value={this.state.query}
-          onChange={this.handleSearch}
-        />
-        <button class="button" onClick={this.handleClick}>
-        Show me Pubs!
-        </button>
+        <form onSubmit={this.handleSubmit}>
+          <input className="searchBox" size="50"
+            placeHolder='Search your State'
+            type='search'
+            value={this.state.query}
+            onChange={this.handleSearch}
+          />
+          <button type="submit" className="button">
+            Show me Pubs!
+          </button>
+        </form>
         <div className='results'>
         {
           this.state.pubs.map(result => {
