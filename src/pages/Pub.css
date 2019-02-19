@@ -1,15 +1,68 @@
 .pub {
-  background: url('./pubjs.jpeg') center no-repeat;
-  /* background: url(../Images/logo.png) left center no-repeat; */
-  position: relative;
+  color: white;
+  background-image: url('https://images.pexels.com/photos/1038935/pexels-photo-1038935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
   text-align: center;
-  margin: auto;
-  padding: 10px;
-  height: 100%;
-  box-sizing: border-box;
-  background-size: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
-body {
-  height: 100%;
+.y {
+    background-color: rgba(200,200,200,0.5);
+}
+
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+
+.d{
+  color: black;
+  background-color: #222;
+  padding: 0 0.3em;
+  background: transparent;
+}
+
+.z {
+  font-size: 70px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+
+.b {
+  font-size: 40px;
+  padding-bottom: 30px;
+
+}
+
+.c {
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+.e {
+  font-size: 35px;
+}
+
+.f {
+  font-size: 35px;
+  padding-bottom: 30px;
 }
