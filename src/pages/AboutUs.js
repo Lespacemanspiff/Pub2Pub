@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import './ddad.png'
+// import './ddad.png'
 import './AboutUs.css'
 
 
@@ -15,7 +15,7 @@ const AboutUs = () => {
           <div className="div">
 
             <div className="dropdown">
-              <img src="images/javi.jpg" alt="Cinque Terre" width="150" height="200"/>
+              <img src="images/javi.jpg" alt="Cinque Terre" width="150" height="200" className="main-image"/>
               <div className="dropdown-content">
                 <img src="images/javi.jpg" alt="team" width="200" height="250"/>
                 <div className="desc">
@@ -27,7 +27,7 @@ const AboutUs = () => {
             </div>
 
             <div className="dropdown">
-             <img src="images/rocio.jpg" alt="Cinque Terre" width="150" height="200"/>
+             <img src="images/rocio.jpg" alt="Cinque Terre" width="150" height="200" className="main-image"/>
               <div className="dropdown-content">
               <img src="images/rocio.jpg" alt="team" width="200" height="250"/>
               <div className="desc">
@@ -39,7 +39,7 @@ const AboutUs = () => {
           </div>
 
                       <div className="dropdown">
-                      <img src="images/gina.jpg" alt="Cinque Terre" width="175" height="225"/>
+                      <img src="images/gina.jpg" alt="Cinque Terre" width="175" height="225" className="main-image"/>
                         <div className="dropdown-content">
                         <img src="images/gina.jpg" alt="team" width="200" height="250"/>
                             <div className="desc">
@@ -51,7 +51,7 @@ const AboutUs = () => {
                        </div>
 
                            <div className="dropdown">
-                           <img src="images/simon.jpg" alt="Cinque Terre" width="150" height="200"/>
+                           <img src="images/simon.jpg" alt="Cinque Terre" width="150" height="200" className="main-image"/>
                              <div className="dropdown-content">
                              <img src="images/simon.jpg" alt="team" width="200" height="250"/>
                                  <div className="desc">
@@ -63,7 +63,7 @@ const AboutUs = () => {
                             </div>
 
                                 <div className="dropdown">
-                                <img src="images/thomas.jpg" alt="Cinque Terre" width="150" height="200"/>
+                                <img src="images/thomas.jpg" alt="Cinque Terre" width="150" height="200" className="main-image"/>
                                   <div className="dropdown-content">
                                   <img src="images/thomas.jpg" alt="" width="200" height="250"/>
                                   <div className="desc">
