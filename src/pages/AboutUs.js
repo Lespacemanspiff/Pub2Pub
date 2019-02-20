@@ -15,9 +15,9 @@ const AboutUs = () => {
           <div className="div">
 
             <div className="dropdown">
-              <img src="images/javi.jpg" alt="Cinque Terre" width="75" height="100"/>
+              <img src="images/javi.jpg" alt="Cinque Terre" width="150" height="200"/>
               <div className="dropdown-content">
-                <img src="images/javi.jpg" alt="team" width="300" height="350"/>
+                <img src="images/javi.jpg" alt="team" width="200" height="250"/>
                 <div className="desc">
                 <h2>Javier Mesa</h2>
                 <p>Miami, FL.</p>
@@ -27,9 +27,9 @@ const AboutUs = () => {
             </div>
 
             <div className="dropdown">
-             <img src="images/rocio.jpg" alt="Cinque Terre" width="75" height="100"/>
+             <img src="images/rocio.jpg" alt="Cinque Terre" width="150" height="200"/>
               <div className="dropdown-content">
-              <img src="images/rocio.jpg" alt="team" width="300" height="350"/>
+              <img src="images/rocio.jpg" alt="team" width="200" height="250"/>
               <div className="desc">
               <h2>Rocio De Santiago</h2>
               <p>Chicago, IL.</p>
@@ -39,9 +39,9 @@ const AboutUs = () => {
           </div>
 
                       <div className="dropdown">
-                      <img src="images/gina.jpg" alt="Cinque Terre" width="125" height="175"/>
+                      <img src="images/gina.jpg" alt="Cinque Terre" width="175" height="225"/>
                         <div className="dropdown-content">
-                        <img src="images/gina.jpg" alt="team" width="300" height="350"/>
+                        <img src="images/gina.jpg" alt="team" width="200" height="250"/>
                             <div className="desc">
                               <h2>Gina</h2>
                               <p>Russia</p>
@@ -51,9 +51,9 @@ const AboutUs = () => {
                        </div>
 
                            <div className="dropdown">
-                           <img src="images/simon.jpg" alt="Cinque Terre" width="75" height="100"/>
+                           <img src="images/simon.jpg" alt="Cinque Terre" width="150" height="200"/>
                              <div className="dropdown-content">
-                             <img src="images/simon.jpg" alt="team" width="300" height="350"/>
+                             <img src="images/simon.jpg" alt="team" width="200" height="250"/>
                                  <div className="desc">
                                  <h2>Simon Choren</h2>
                                  <p>Miami, Fl.</p>
@@ -63,9 +63,9 @@ const AboutUs = () => {
                             </div>
 
                                 <div className="dropdown">
-                                <img src="images/thomas.jpg" alt="Cinque Terre" width="75" height="100"/>
+                                <img src="images/thomas.jpg" alt="Cinque Terre" width="150" height="200"/>
                                   <div className="dropdown-content">
-                                  <img src="images/thomas.jpg" alt="" width="300" height="350"/>
+                                  <img src="images/thomas.jpg" alt="" width="200" height="250"/>
                                   <div className="desc">
                                   <h2>Thomas Kennedy</h2>
                                   <p>Hollywood, Fl.</p>
