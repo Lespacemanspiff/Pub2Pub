@@ -10,7 +10,7 @@ const AboutUs = () => {
         <Navbar/>
       <div>
 
-            <h1 className="usTitle">Meet the Team.</h1>
+            <h1 className="usTitle">Meet the Team</h1>
 
           <div className="div">
 

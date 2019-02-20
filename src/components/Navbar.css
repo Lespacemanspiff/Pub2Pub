@@ -1,17 +1,17 @@
 .topnav {
+  width: 100%;
   background-color: #333;
   overflow: hidden;
-
-
-  width: 100%;
+  position: fixed;
   top: 0;
-
   opacity: .8;
+  z-index: 2;
 }
 
 .topnav a:hover {
   background-color: grey;
-  color: white;
+  color: gold;
+  transform: scale(1.1);
 }
 
 .topnav a {
@@ -20,5 +20,10 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  font-family: Arvo;
+  font-weight: bold;
+}
+.fas{
+  margin-left: 5px;
 }
