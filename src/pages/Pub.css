@@ -1,4 +1,4 @@
-.pub {
+.pub{
   color: white;
   background-image: url('https://images.pexels.com/photos/1038935/pexels-photo-1038935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
@@ -8,11 +8,11 @@
   background-attachment: fixed;
 }
 
-.y {
-    background-color: rgba(200,200,200,0.5);
+.y{
+  background-color: rgba(200,200,200,0.5);
 }
 
-.shadow {
+.shadow{
   color: #fff;
   font-family: Arvo;
   font-weight: bold;
@@ -50,7 +50,6 @@
 .b {
   font-size: 40px;
   padding-bottom: 30px;
-
 }
 
 .c {

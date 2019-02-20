@@ -11,8 +11,8 @@ body {
   text-align: center;
   width: 100vw;
   min-height: 100vh;
-  background-attachment: fixed;}
-
+  background-attachment: fixed;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

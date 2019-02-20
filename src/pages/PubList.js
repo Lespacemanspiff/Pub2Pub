@@ -20,51 +20,49 @@ class PubList extends Component {
     this.setState({ pubs: data })
   }
 
-
   render(){
     console.log(this.state.pubs)
     return(
       <div className="pubList">
         <Navbar/>
         <div className="plate">
-<p className="script"><span>What</span></p>
-<p className="shadow text1">STATE</p>
-<p className="shadow text2">ARE</p>
-<p className="shadow text3">YOU IN?</p>
-<p className="script"><span>Cheers!</span></p>
-</div>
+          <p className="script"><span>What</span></p>
+          <p className="shadow text1">STATE</p>
+          <p className="shadow text2">ARE</p>
+          <p className="shadow text3">YOU IN?</p>
+          <p className="script"><span>Cheers!</span></p>
+        </div>
 
-  <div className="fullInput">
-        <form onSubmit={this.handleSubmit}>
-          <input className="searchBox"
-            placeHolder='Search your State'
-            type='search'
-            value={this.state.query}
-            onChange={this.handleSearch}
-          />
-    <div>
-          <button type="submit" className="button">
-            Show me the pubs!
-          </button>
-    </div>
-        </form>
+        <div className="fullInput">
+          <form onSubmit={this.handleSubmit}>
+            <input className="searchBox"
+                   placeHolder='Search your State'
+                   type='search'
+                   value={this.state.query}
+                   onChange={this.handleSearch}
+            />
+            <div>
+              <button type="submit" className="button">
+                Show me the pubs!
+              </button>
+            </div>
+          </form>
+        </div>
 
-  </div>
         <div className='results'>
         {
           this.state.pubs.map(result => {
             return(
               <div className="result" key={result.name}>
                 <Link to={`/pub/${result.id}`}>{result.name}</Link>
-
               </div>
             )
           })
         }
         </div>
-</div>
+      </div>
     )
   }
 }
 
-export default PubList
+export default PubList;
