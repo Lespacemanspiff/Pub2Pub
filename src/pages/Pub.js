@@ -30,7 +30,6 @@ class Pub extends Component {
       <>
       <Navbar/>
       <div className="pub">
-
         <div className="plate y">
           <p className="script"><span>Welcome to</span></p>
           <p className="shadow z">{pub.name}</p>
@@ -48,4 +47,4 @@ class Pub extends Component {
   }
 }
 
-export default Pub
+export default Pub;
